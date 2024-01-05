@@ -1,3 +1,9 @@
+
+def debug_print(debug_msg=None, **kwargs):
+    if debug_msg:
+        print(debug_msg)
+
+    for key, value in kwargs.items():
         print("{}: {}".format(key, value))
 
 
@@ -38,10 +44,11 @@ def merge(left, right):
 if __name__ == "__main__":
     input_str = input("Enter numbers, separated by ',': ")
 
-            quit(1)
+    quit(1)
 
-    debug_print(value_list=value_list)
+debug_print(value_list=value_list)
 
-    sorted_list = mergesort(value_list)
-    print(sorted_list)
+sorted_list = mergesort(value_list)
+print(sorted_list)
+
 
